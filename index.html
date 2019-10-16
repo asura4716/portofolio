@@ -7,46 +7,60 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <div class='navBar'>
-    <nav role="navigation">
-      <h1>RN</h1>
-      <ul>
-        <li><a class="jumper" href="#bio">Bio</a></li>
-        <li><a class="jumper" href="#proj">Projects</a></li>
-        <li><a class="jumper" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class='container'>
+    <h1><a class="home-button" href="#header">RN</a></h1>
+      <nav class="navbar">
+        <div class="hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        <ul class="menu">
+          <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proj">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <main role="main">
-        <header role="banner">
-            <h1>Hi, my name is Ryoichiro Nagai. I'm a fullstack web developer!</h1>
+    <main>
+        <header id="header">
+            <h2>Hi, my name is Ryoichiro Nagai. I'm a fullstack web developer!</h2>
         </header>
 
         <section id="bio">
-            <h2 class="header">Bio</h2>
-            <p>I am a web developer and recently graduated from Web Devloper Track. I love coding because what I write immediately and directly gets reflected to the product. I am passionate to work in a fast paced environment of IT where it gets integrated into new technology every minute.</p>
-            <p>When I am not coding, I like to workout, reading some books, playing games, and snowboarding during the winter.I am aspiring to go around the world to snowboard at some of the iconic mountains out there.</p>
+            <h3 class="header">Bio</h3>
+            <p id="dev-background">I am a web developer and recently graduated from Web Devloper Track. I love coding because what I write immediately and directly gets reflected to the product. I am passionate to work in a fast paced environment of IT where it gets integrated into new technology every minute.</p>
+            <p id="my-background">When I am not coding, I like to workout, reading some books, playing games, and snowboarding during the winter. I am aspiring to go around the world to snowboard at some of the iconic mountains out there.</p>
+            <img class="hobby" src="https://www.newzealand.com/assets/Operator-Database/eb6e3df118/img-1536074002-260-12126-p-4187EE7B-A5EB-838A-6E003525AA3AD9F6-2544003__FocalPointCropWzQ0MCwxMjgwLDQ5LDM1LDc1LCJqcGciLDY1LDIuNV0.jpg" alt="snowboarding">
         </section>
         
 
         <section id="proj">
-            <h2 class="header">Projects</h2>
-            <h3>Snowboard Quiz App</h3>
+            <h3 class="header">Projects</h3>
+            <h4>Snowboard Quiz App</h4>
             <img class="appPic" src="https://66.media.tumblr.com/b02208a62c98bcd1031e1f52a1c9b45d/tumblr_py91gx0xKy1yvecfqo1_540.jpg" alt="quizzApp">
-            <p><a href="https://github.com/asura4716/quizapp">Repo |</a>
-            <a href="https://asura4716.github.io/quizapp/">Live</a></p>
-            <p>This app is to simply quizz your random knowledge of snowboard on anybody who is interested in snowboarding.</p>
+            <p><a target= "_blank" class="project-link" href="https://github.com/asura4716/quizapp">Repo</a> |
+            <a target= "_blank" class="project-link" href="https://asura4716.github.io/quizapp/">Live</a></p>
+            <p>This app is to simply quizz your random knowledge of snowboard on anybody who is also interested in snowboarding.</p>
             <img class="language" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/900px-JavaScript-logo.png" alt="jsLogo">
             <img class="language" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="htmlLogo">
             <img class="language" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="cssLogo">
+            <h5>And more to come...</h5>
         </section>
         
         <section id="contact">
-            <h2 class="header">Contact</h2>
-            <a href="https://www.linkedin.com/in/ryoichiro-nagai-39415233/"><img class="contact" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png" alt="linkedinLogo"></a>
-            <a href="https://github.com/asura4716"><img class="contact" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Octocat_GitHub_Mascot.png/330px-Octocat_GitHub_Mascot.png" alt="gitHubLogo"></a>
-            <a href="mailto:nryoichiro@gmail.com"><img class="contact" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Gmail_Icon.png/150px-Gmail_Icon.png" alt="gmailLogo"></a>
+            <h3 class="header">Contact</h3>
+              <img class="myPic" src="https://avatars1.githubusercontent.com/u/4744618?s=460&v=4" alt="myFace">
+            <div class="contact">
+              <a target = "_blank" href="https://www.linkedin.com/in/ryoichiro-nagai-39415233/"><img class="contactPic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png" alt="linkedinLogo"></a>
+              <a target= "_blank" href="https://github.com/asura4716"><img class="contactPic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Octocat_GitHub_Mascot.png/330px-Octocat_GitHub_Mascot.png" alt="gitHubLogo"></a>
+              <a target= "_blank" href="mailto:nryoichiro@gmail.com"><img class="contactPic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Gmail_Icon.png/150px-Gmail_Icon.png" alt="gmailLogo"></a>
+            </div>
         </section>
     </main>
+    <footer>
+      ©Ryoichiro Nagai 2019
+    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
