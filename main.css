@@ -8,14 +8,13 @@ body {
   font-family: "Open Sans",
   sans-serif; 
   font-size: 16px;
-  color: #262626;
+  color: #eee;
   text-align: center;
   line-height: 1.5;
 }
 
-navbar,
 footer {
-  background-color: #aaa;
+  background-color: teal;
 }
 
 .navbar {
@@ -39,7 +38,7 @@ footer {
   width: 35px;
   height: 30px;
   position: fixed;
-  top: 15px;
+  top: 10px;
   right:20px;
   cursor: pointer;
   display: flex;
@@ -50,7 +49,7 @@ footer {
 .line {
   width: 100%;
   height: 3px;
-  background-color: chocolate;
+  background-color: rgb(255, 81, 0);
   transition: all 0.8s;
 }
 
@@ -88,26 +87,30 @@ footer {
 h1 {
   margin-bottom:0;
   margin-top: 0;
-  background-color: #aaa;
+  background-color:  teal;
   position: fixed;
   width: 100%;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 81, 0);
+  color: #eee;
 }
 
 header {
   margin-left: auto;
   margin-right: auto;
-  max-width: 850px;
+  max-width: 1400px;
   padding: 100px 20px 80px 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
 }
 
 section {
   min-height: 25px;
-  background-color: #bbb;
+  background-color: teal;
   padding-bottom: 10px;
-  font-size: 16px;
   padding-top: 85px;
-  max-width: 850px;
+  max-width: 1450px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -115,7 +118,7 @@ section {
 }
 
 section:nth-child(even) {
-  background-color: #ddd;
+  background-color: rgb(0,107,128);
 }
 
 .header {
@@ -135,14 +138,14 @@ section:nth-child(even) {
 }
 
 .contactPic {
-  width:60px;
-  height: 60px;
+  width:80px;
+  height: 80px;
   padding: 10px 10px 10px 10px;
 }
 
 .project-link {
   text-decoration: none;
-  color: chocolate;
+  color: rgb(255, 81, 0);
 }
 
 .project-link:hover {
@@ -194,125 +197,110 @@ h5 {
 
 @media screen and (min-width: 500px) {
   header {
-  padding-top: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 850px;
-  padding-bottom: 100px;
+    padding-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
   }
   body {
-  font-family: "Open Sans",
-  sans-serif; 
-  font-size: 20px;
-  color: #444;
-  text-align: center;
-  line-height: 2.0;
+    font-size: 1.5em;
+    line-height: 2.0;
   }
   section {
-  min-height: 25px;
-  background-color: #bbb;
-  padding-bottom: 10px;
-  font-size: 20px;
-  padding-top: 50px;
-  max-width: 850px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
+    min-height: 25px;
+    background-color: teal;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
   }
   .header {
-  font-size: 35px;
+    font-size: 2em;
   }
   .contactPic {
-  width:80px;
-  height: 80px;
-  padding: 10px 10px 10px 10px;
-  }
-
-  .contact {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: auto;
+    width: 100px;
+    height: 100px;
+    padding: 10px 10px 10px 10px;
   }
 
   h1 {
-  margin:0;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 40px;
+    margin:0;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 40px;
   }
 
   .language {
-  width: 40px;
-  height: 40px;
+    width: 40px;
+    height: 40px;
   }
   #dev-background {
     padding-bottom:20px;
   }
 
   #bio {
-  padding: 75px 30px 100px 30px;
+    padding: 75px 30px 100px 30px;
   }
 
   #proj {
-  padding: 75px 30px 100px 30px;
+    padding: 75px 30px 100px 30px;
   }
 
   #contact {
     padding: 75px 30px 100px 30px;
   }
   section p {
-  text-align: left;
+    text-align: left;
   }
   #proj p {
-  text-align: center;
-  }
-  .menu {
-    float: right;
+    text-align: center;
   }
 
   myPic {
     height: auto;
     max-width: 100%;
   }
+  .hamburger-menu {
+    top: 25px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
   nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  display: flex;
-  flex-direction: row;
-  align-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
   }
   .menu li {
     display: inline-block;  
     list-style-type: none;
     margin:0;
-    padding-left: 10px;
+    padding-left: 25px;
   }
   .hamburger-menu {
     display: none;
   }
 
   .navbar {
-  width: 100%;
-  height: auto;
-  background-color: initial;
-  position: fixed;
-  padding-top: 15px;
+    width: 100%;
+    height: auto;
+    background-color: initial;
+    position: fixed;
+    padding-top: 20px;
   }
   .nav-link {
-  text-decoration: none;
-  font-size: 22px;
-  color: chocolate;
-  font-weight: 300;
-  letter-spacing: 1px;
-  text-transform: uppsercase;
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(255, 81, 0);
+    font-weight: 300;
+    letter-spacing: 1px;
   }
   .nav-link:hover {
     text-decoration: underline;
